@@ -1,3 +1,4 @@
+
 <?php
 
 return [
@@ -32,12 +33,12 @@ return [
 
         'pusher' => [
             'driver' => 'pusher',
-            'key' => env('6ca858e960c122cdbb70'),
-            'secret' => env('d71af481a0537e120cff'),
-            'app_id' => env('1114839'),
+            'key' => env('PUSHER_APP_KEY'),
+            'secret' => env('PUSHER_APP_SECRET'),
+            'app_id' => env('PUSHER_APP_ID'),
             'options' => [
-                'cluster' => env('ap2'),
-                'useTLS' => true,
+                'cluster' => env('PUSHER_CLUSTER'),
+                /*'encrypted' => true,*/
             ],
         ],
 

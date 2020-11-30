@@ -5,6 +5,7 @@
                 <div class="header">
                     <strong class="primary-font">
                         {{ message.user.name }}
+
                     </strong>
                 </div>
                 <p>
@@ -17,6 +18,10 @@
 
 <script>
     export default {
-        props: ['messages']
+        props: ['messages'],
+        mounted() {
+            console.log('messages')
+        }
     };
 </script>
+
